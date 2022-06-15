@@ -29,6 +29,8 @@ app.MapGet("v1/posts", ()
 app.MapGet("v1/posts/{slug}", (string slug)
     => Results.Ok(posts.FirstOrDefault(x => x.Slug == slug)));
 
+app.MapGet("", ()
+    => "Hello world!");
 
 app.Run();
 
