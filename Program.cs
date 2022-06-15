@@ -1,4 +1,4 @@
-using Blog.Extensions;
+using FriendlyUrlHelper;
 
 var builder = WebApplication.CreateBuilder(args);
 
